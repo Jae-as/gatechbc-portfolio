@@ -73,12 +73,12 @@ nav {
     margin: 0;
   }
   
-  /* Add a background color to navigation links on hover */
+  /* background color to navigation links on hover */
   .nav a:hover, .subnav:hover .subnavbtn {
     background-color: #6525e4;
   }
   
-  /* Style the subnav content - positioned absolute */
+  /* subnav content styling */
   .subnav-content {
     display: none;
     position: absolute;
@@ -88,20 +88,20 @@ nav {
     z-index: 1;
   }
   
-  /* Style the subnav links */
+  /* subnav link styling */
   .subnav-content a {
     float: left;
     color: #ffffff;
     text-decoration: none;
   }
   
-  /* Add a grey background color on hover */
+  /* background color on hover */
   .subnav-content a:hover {
     background-color: #eee;
     color: black;
   }
   
-  /* When you move the mouse over the subnav container, open the subnav content */
+  /* open subnav compontents */
   .subnav:hover .subnav-content {
     display: block;
   }
@@ -110,10 +110,12 @@ nav {
     display: block
   }
 
+  /*main page styling */
   main {
     display: flex;
   }
   
+  /* About Me styling */
   .aboutme {
     padding: 10px;
     background-color: #222532;
@@ -149,7 +151,7 @@ nav {
     padding: 5%;
 }
 
-/* Core Skills Column 1*/
+/* Core Skills built*/
 
 .coreskills {
     display: flex;
@@ -213,7 +215,7 @@ nav {
     border-color: #6525e4;
   }
 
-  /* under construction images*/
+  /* under construction styling*/
   .coreskills-column-uc {
     flex: 1 0 25%;
     padding: 1rem;
@@ -259,6 +261,7 @@ nav {
     border-color: #36323e;
   }
 
+/* footer styling */
 footer {
         padding: 0.5%;
         clear: both;
@@ -275,6 +278,7 @@ footer a{
     font-size: 1.5rem;
 }
 
+/* responsive display styling */
 
   @media screen and (max-width: 770px) {
         

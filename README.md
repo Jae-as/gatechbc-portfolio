@@ -2,7 +2,9 @@
 Week 2 Homework Challenge
 
 Completed Week 2 Homework Challenge to develop new portfolio website by
-1. 
+1. Creating new portfolio website to showcase applications developed during GA Tech bootcamp
+2. Maintain accessibility standards through quality code and accessibility best practices
+3. Ensured application was responsive to different screen sizes
 
 ## User Story
 AS AN employer
