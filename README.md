@@ -28,7 +28,8 @@ WHEN I resize the page or view the site on various screens and devices
 THEN I am presented with a responsive layout that adapts to my viewport
 
 ## Mock Up
-The following image shows the web application's appearance and functionality:
+The following video shows the web application's appearance and functionality:
+![Video of Week 2 Portfolio Website](./assets/videos/week2-portfoliowebsitevideo.mov)
 
-![Video of Week 2 Online Portfolio](.assets/videos/week2-portfoliowebsitevideo.mov)
-
+## Deployed Application Link
+https://jae-as.github.io/gatechbc-portfolio/
