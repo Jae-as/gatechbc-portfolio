@@ -6,10 +6,16 @@
     margin: 0;
 }
 
+html{
+    font-size: 62.5%
+}
+
 /*background color for content body*/
 body {
     background-color: #ffffff;
     font-family: 'Courier New', Courier, monospace;
+    font-size: 1.75rem;
+    line-height:1.5;
 }
 
 /* styling for main header*/
@@ -22,7 +28,7 @@ header {
 /* styling for h1 text within header */
 header h1 {
     display: inline-flex;
-    font-size: 300%;
+    font-size: 4rem;
     padding: 0.5%, 0.5%;
 }
 
@@ -34,13 +40,15 @@ nav {
     text-align: center;
     background-color: #5f688d;
     overflow:hidden;
+    justify-content: space-between;
+    align-items: center;
     display: flex;
   }
   
   /* Navigation links */
   nav a {
     float: left;
-    font-size: 100%;
+    font-size: 2rem;
     color: #ffffff;
     text-align: center;
     padding: 14px 16px;
@@ -55,7 +63,7 @@ nav {
   
   /* Subnav button */
   .subnav .subnavbtn {
-    font-size: 100%;
+    font-size: 2rem;
     border: none;
     outline: none;
     color: #ffffff;
@@ -107,32 +115,28 @@ nav {
   }
   
   .aboutme {
-    margin-right: 20px;
-    padding: 20px;
-    clear: both;
-    float: right;
-    width: 20%;
-    height: 100%;
+    padding: 10px;
     background-color: #222532;
   }
 
  .aboutme h2 {
     color: #ffffff;
-    font-size: 225%;
+    font-size: 3.5rem;
     display: block;
     padding: 5%;
+    text-align: center;
  }
 
  .aboutme h3 {
     color: #ffffff;
-    font-size: 150%;
+    font-size: 3rem;
     display: block;
     padding: 5%;
  }
 
  .aboutme p {
     color: #ffffff;
-    font-size: 100%;
+    font-size: 1.8rem;
     display: block;
  }
 
@@ -145,69 +149,115 @@ nav {
     padding: 5%;
 }
 
-/* A flex-basis of 200px sets the starting width */
-/* A flex-grow value of 1 allows the elements to evenly grow to fill the remaining space */
-.coreskills{
-    border-width: 2px;
-    padding: 2%;
-    font-size: 125%;
+/* Core Skills Column 1*/
+
+.coreskills {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-left: -1.5rem;
+    margin-right: -1.5rem;
   }
-.coreskills h2{
+
+.coreskills h2 {
+    display: flex;
+    color: #222532;
+    padding: 5%;
+    font-size: 5rem;
+    flex: 1 0 100%;
+    transition: flex-basis 500ms linear;
+    margin-inline-start: 40%;
+}
+.coreskills-column {
+    flex: 1 0 100%;
+    padding: 1.5rem;
+    transition: flex-basis 500ms linear;
+    margin-bottom: 1.5rem;
+}
+
+.coreskillscomponent{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    max-width: 100%;
-    height: auto;
-    margin: 0 autio;
-    color: #222532;
-}
-.coreskillscomponent{
-    flex: 1 0 200px;
-    padding: 10px;
-    text-align: center;
-    border-width: 3px;
-    border-color: #6525e4;
-    position: relative;
+    justify-content:flex-start;
+    min-height: 100%;
+    padding: 2rem;
 }
 
  .coreskillscomponent img{
     display: flex;
-    float: center;
     object-fit: scale-down;
-    max-width: 50%;
+    max-width: 100%;
     height: auto;
     padding: 5%;
  }
 
  .coreskillscomponent h2{
     position: absolute;
-    top: 200px;
-    left: 0;
-    width: 100%;
+    z-index: 100;
+    margin-block-start: 2em;
+    margin-block-end: 2em;
+    margin-inline-start: 0em;
+    margin-inline-end: 0em;
+    font-size: 1.5rem;
  }
 
- .coreskillscomponent h2 span{
+ .coreskillscomponent h2 span {
     color:#ffffff;
-    font: bold
-    letter-spacing: -1;
     background: #6525e4;
-    padding: 10px;
+    padding: 10%;
  }
 
-.projects {
-    width: 75%;
-    display: inline-block;
-    margin-right: 20px;
-    }
-  
-.projects header {
-      padding: 20px;
-      background: #13293d;
-      color: #fff;
-    }
+ .coreskillscomponent:hover {
+    border-style: dashed;
+    border-width: 3px;
+    border-color: #6525e4;
+  }
 
+  /* under construction images*/
+  .coreskills-column-uc {
+    flex: 1 0 25%;
+    padding: 1rem;
+    transition: flex-basis 500ms linear;
+    margin-bottom: 1.5rem;
+}
 
+  .coreskillscomponent-uc{
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    min-height: 100%;
+    padding: 2rem;
+}
+
+ .coreskillscomponent-uc img{
+    display: flex;
+    object-fit: scale-down;
+    max-width: 100%;
+    height: auto;
+    padding: 5%;
+ }
+
+ .coreskillscomponent-uc h2{
+    position: absolute;
+    z-index: 100;
+    margin-block-start: 1.85em;
+    margin-block-end: 1.85em;
+    margin-inline-start: 0em;
+    margin-inline-end: 0em;
+    font-size: 1.5rem;
+ }
+
+ .coreskillscomponent-uc h2 span {
+    color:#ffffff;
+    background: #36323e;
+    padding: 5%;
+ }
+
+ .coreskillscomponent-uc:hover {
+    border-style: dashed;
+    border-width: 3px;
+    border-color: #36323e;
+  }
 
 footer {
         padding: 0.5%;
@@ -218,136 +268,29 @@ footer {
     }
 
 footer h6{
-    font-size: 10px;
+    font-size: 1.5rem;
 }
 
 footer a{
-    font-size: 10px;
+    font-size: 1.5rem;
 }
 
 
+  @media screen and (max-width: 770px) {
+        
+    header {
+      display: none;
+    }
 
+    .coreskills h2 {
+        font-size: 4rem;
+    }
 
-    /* Smartphones (portrait and landscape) ----------- */
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-    /* Styles */
-    
-  }
-  
-  /* Smartphones (landscape) ----------- */
-  @media only screen and (min-width: 321px) {
-    /* Styles */
-   
-  }
-  
-  /* Smartphones (portrait) ----------- */
-  @media only screen and (max-width: 320px) {
-    /* Styles */
+    .coreskillscomponent h2{
+        display: none ;
+    }
+    .coreskillscomponent-uc h2{
+        display: none;
+    }
 
-  }
-  
-  /* iPads (portrait and landscape) ----------- */
-  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-    /* Styles */
-  
-  }
-  
-  /* iPads (landscape) ----------- */
-  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
-    /* Styles */
-  }
-  
-  /* iPads (portrait) ----------- */
-  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
-    /* Styles */
-  }
-  
-  /* iPad 3 (landscape) ----------- */
-  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
-    /* Styles */
-  }
-  
-  /* iPad 3 (portrait) ----------- */
-  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
-    /* Styles */
-  }
-  
-  /* Desktops and laptops ----------- */
-  @media only screen and (min-width: 1224px) {
-    /* Styles */
-  }
-  
-  /* Large screens ----------- */
-  @media only screen and (min-width: 1824px) {
-    /* Styles */
-  }
-  
-  /* iPhone 4 (landscape) ----------- */
-  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
-    /* Styles */
-  }
-  
-  /* iPhone 4 (portrait) ----------- */
-  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
-    /* Styles */
-  }
-  
-  /* iPhone 5 (landscape) ----------- */
-  @media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2) {
-    /* Styles */
-  }
-  
-  /* iPhone 5 (portrait) ----------- */
-  @media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2) {
-    /* Styles */
-  }
-  
-  /* iPhone 6 (landscape) ----------- */
-  @media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2) {
-    /* Styles */
-  }
-  
-  /* iPhone 6 (portrait) ----------- */
-  @media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2) {
-    /* Styles */
-  }
-  
-  /* iPhone 6+ (landscape) ----------- */
-  @media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2) {
-    /* Styles */
-  }
-  
-  /* iPhone 6+ (portrait) ----------- */
-  @media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2) {
-    /* Styles */
-  }
-  
-  /* Samsung Galaxy S3 (landscape) ----------- */
-  @media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2) {
-    /* Styles */
-  }
-  
-  /* Samsung Galaxy S3 (portrait) ----------- */
-  @media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2) {
-    /* Styles */
-  }
-  
-  /* Samsung Galaxy S4 (landscape) ----------- */
-  @media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3) {
-    /* Styles */
-  }
-  
-  /* Samsung Galaxy S4 (portrait) ----------- */
-  @media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
-    /* Styles */
-  }
-  
-  /* Samsung Galaxy S5 (landscape) ----------- */
-  @media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3) {
-    /* Styles */
-  }
-  
-  /* Samsung Galaxy S5 (portrait) ----------- */
-  @media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
-    /* Styles */
   }

@@ -12,6 +12,7 @@
 
 <body>
 <a name="top"></a>
+
 <!--Navigation bar-->
 <header class="header">
 
@@ -19,12 +20,14 @@
 
 <nav class="navbar">
     
-    <a href="about-me"> About Me </a>
+    <a href="#about-me"> About Me </a>
     <subnav class="subnav">
     <button class="subnavbtn"> My Work <i class="fa fa-caret-down"></i></button>
     <div class="subnav-content">
-        <a href="gatech-coreskills"> GA Tech Bootcamp Core Skills</a>
-        <a href="gatech-projects"> GA Tech Bootcamp Projects</a>
+        <a href="#html-css"> HTML/CSS</a>
+        <a href="#javascript"> JavaScript</a>
+        <a href="#webapis"> WebAPIs</a>
+        <a href="#3rdpartyapis"> WebAPIs</a>
         <a href="https://github.com/Jae-as"> GitHub </a>
     </div>
     </subnav>
@@ -32,7 +35,7 @@
     <subnav class="subnav">
     <button class="subnavbtn"> Contact Me <i class="fa fa-caret-down"></i></button>
     <div class="subnav-content">
-        <a href="#"> Email </a>
+        <a href="mailto:janaee.as.wallace@gmail.com?Subject=ProjectInquiry"> Email Me </a>
         <a href="https://www.linkedin.com/in/janaeewallace/"> LinkedIn </a>
     </div>
     </subnav>
@@ -43,225 +46,66 @@
 
 <main>
 <!--About Me-->
+<div id="about-me">
 <aside class="aboutme">
-    <h2 id="about-me"> About Me</h2>
+    <h2>About Me</h2> 
     <img src="./assets/images/janaeepromoheadshot.JPG">
     <h3>Janaee Wallace</h3>
     <p> Hi! My name is Janaee, I am excited to meet you and talk about the work I've done in application engineering! If you have any questions about my portfolio please don't hesistate to reach out!</p>
 </aside>
-
+</div>
 <!--My Work - Core Skills-->
-<section class="coreskills">
-<h2 id="gatech-coreskills"> Georgia Tech Bootcamp Core Skills </h2>
+<section class="coreskills" id="gatech-coreskills">
+<h2> My Work </h2>
 
-<section class="coreskillscomponent">
-    <a href="https://jae-as.github.io/week1-challenge/">
-    <img src="./assets/images/digital-marketing-meeting.jpg" alt="HTMLCSSimage">
-    </a>
-    <h2>
-    <span>
-    HTML/CSS
-    </span>
-    </h2> 
-</section>
-
- <!-- fix one first
-<section class="coreskillscomponent">
-    <div id="javascript">
-        <header> JavaScript </header>
-        <figure>
-            <img src="./assets/images/underconstruction1.png">
-            <figcaption> Coming Soon! </figcaption>
+<div id="html-css">
+    <section class="coreskills-column">
+        <figure class="coreskillscomponent">
+            <a href="https://jae-as.github.io/week1-challenge/">
+                <img src="./assets/images/digital-marketing-meeting.jpg" alt="HTMLCSSimage">
+            </a>
+            <h2 id="HTML/CSS"><span>
+                HTML/CSS
+            </span></h2>
         </figure>
-    </div>
-</section>
-
-<section class="coreskillscomponent">
-    <div id="webapi">
-        <header> Web APIs </header>
-        <figure>
-            <img src="./assets/images/underconstruction2.png">
-            <figcaption> Coming Soon! </figcaption>
-        </figure>
-    </div>
-</section>
-
-<section class="coreskillscomponent">
-    <div id="thirdpartyapi">
-        <header> Third-party APIs </header>
-        <figure>
-            <img src="./assets/images/underconstruction3.png">
-            <figcaption> Coming Soon! </figcaption>
-        </figure>
-    </div>
-</section>
-
-<section class="coreskillscomponent">
-    <div id="serversideapi">
-        <header> Server-side APIs </header>
-        <figure>
-            <img src="./assets/images/underconstruction1.png">
-            <figcaption> Coming Soon! </figcaption>
-        </figure>
-    </div>
-</section>
-
-<section class="coreskillscomponent">
-    <div id="nodejs">
-        <header> Node.js </header>
-        <figure>
-            <img src="./assets/images/underconstruction2.png">
-            <figcaption> Coming Soon! </figcaption>
-        </figure>
-    </div>
-</section>
-
-<section class="coreskillscomponent">
-    <div id="expressjs">
-        <header> Express.js </header>
-        <figure>
-            <img src="./assets/images/underconstruction3.png">
-            <figcaption> Coming Soon! </figcaption>
-        </figure>
-    </div>    
-</section>
-    
-<section class="coreskillscomponent">
-    <div id="sql">
-        <header> SQL </header>
-        <figure>
-            <img src="./assets/images/underconstruction1.png">
-            <figcaption> Coming Soon! </figcaption>
-        </figure>
-    </div>
-</section>
-
-<section class="coreskillscomponent">
-    <div id="orm">
-        <header> Object-relational Mapping </header>
-        <figure>
-            <img src="./assets/images/underconstruction2.png">
-            <figcaption> Coming Soon! </figcaption>
-        </figure>
-    </div>
-</section>
-
-<section class="coreskillscomponent">
-    <div id="mvc">
-        <header> Model-View-Controller </header>
-        <figure>
-            <img src="./assets/images/underconstruction3.png">
-            <figcaption> Coming Soon! </figcaption>
-        </figure>
-    </div>    
-</section>
-
-<section class="coreskillscomponent">
-    <div id="nosql">
-        <header> NoSQL </header>
-        <figure>
-            <img src="./assets/images/underconstruction1.png">
-            <figcaption> Coming Soon! </figcaption>
-        </figure>
-    </div>
-</section>
-
-<section class="coreskillscomponent">
-    <div id="pwa">
-        <header> Progressive Web Applications </header>
-        <figure>
-            <img src="./assets/images/underconstruction2.png">
-            <figcaption> Coming Soon! </figcaption>
-        </figure>
-    </div>
-
-<section class="coreskillscomponent">
-    <div id="react">
-        <header> React </header>
-        <figure>
-            <img src="./assets/images/underconstruction3.png">
-            <figcaption> Coming Soon! </figcaption>
-        </figure>
-    </div>   
-</section>
-
-<section class="coreskillscomponent">
-    <div id="mern">
-        <header> MERN Stack </header>
-        <figure>
-            <img src="./assets/images/underconstruction1.png">
-            <figcaption> Coming Soon! </figcaption>
-        </figure>
-    </div>
-</section>
-
-<section class="coreskillscomponent">
-    <div id="state">
-        <header> State </header>
-        <figure>
-            <img src="./assets/images/underconstruction2.png">
-            <figcaption> Coming Soon! </figcaption>
-        </figure>
-    </div>
-</section>
-</section>
-<!--My Work - Projects
-<section class="projects">
-<h2 id="gatech-projects"> Georgia Tech Bootcamp Projects </h2>
-
-<div id="project1">
-    <header> Project 1 </header>
-    <figure>
-        <img src="./assets/images/underconstruction1.png">
-        <figcaption> Coming Soon! </figcaption>
-    </figure>
+    </section>
 </div>
 
-<div id="project2">
-    <header> Project 2 </header>
-    <figure>
-        <img src="./assets/images/underconstruction2.png">
-        <figcaption> Coming Soon! </figcaption>
-    </figure>
+<div id="javascript">
+    <section class="coreskills-column-uc">
+         <figure class="coreskillscomponent-uc">
+                <img src="./assets/images/underconstruction1.svg" alt="JavaScript">
+            <h2 id="JavaScript"><span>
+                    JavaScript
+            </span></h2>
+            </figure>
+    </section>
 </div>
 
-<div id="project3">
-    <header> Project 3 </header>
-    <figure>
-        <img src="./assets/images/underconstruction3.png">
-        <figcaption> Coming Soon! </figcaption>
-    </figure>
+<div id="webapis">
+    <section class="coreskills-column-uc">
+        <figure class="coreskillscomponent-uc">
+               <img src="./assets/images/underconstruction2.svg" alt="WebAPIs">
+           <h2 id="WebAPIs"><span>
+                   WebAPIs
+           </span></h2>
+           </figure>
+    </section>
+</div>
+
+<div id="3rdpartyapis">
+   <section class="coreskills-column-uc">
+    <figure class="coreskillscomponent-uc">
+           <img src="./assets/images/underconstruction3.svg" alt="Third-party APIs">
+       <h2 id="3rdpartyAPIs"><span>
+               3rdpartyAPIs
+       </span></h2>
+       </figure>
+   </section>
 </div>
 
 </section>
-
-
 </main>
-
-<!--Contact Me
-<container class="contactme">
-<form action="action_page.php">
-
-    <label for="firstname">First Name</label>
-    <input type="text" id="firstname" name="firstname" placeholder="Your first name">
-
-    <label for="lastname">Last Name</label>
-    <input type="text" id="lastname" name="lastname" placeholder="Your last name">
-
-    <label for="emailaddress">Email</label>
-    <input type="text" id="emailaddress" name="emailaddress" placeholder="whoyouare@example.com">
-
-    <label for="subject">Subject</label>
-    <input type="text" id="subject" name="subject" placeholder="Subject">
-
-    <label for="moreinfo">More Information</label>
-    <textarea id="moreinfo" name="moreinfo" placeholder="Provide more information..." style="height:200px"></textarea>
-
-    <input type="submit" value="Submit">
-
-</form>
-</container>
--->
 </body>
 
 <footer class="footer">
